@@ -104,7 +104,7 @@ def call_llm(prompt):
         return f"Error: {e}"
 
 # Streamlit UI
-st.title("LLM Streamlit Interface")
+st.title("PharmaLLM")
 
 
 # streamlit start 
