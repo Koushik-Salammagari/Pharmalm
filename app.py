@@ -137,7 +137,9 @@ if st.button("Process Images"):
         # print(len(base_name))
         # Removes the extension # ./uploaded_images/ABCPharma
         results = call_llm_for_images(image_folder_updated, mock=False)  # Set mock=True for testing without API calls
-        combined_text = "\n\n\n".join(results)
+        #combined_text = "\n\n\n".join(results)
+        combined_text = "\n\n\n".join([f"Slide {idx + 1}:\n{result}" for idx, result in enumerate(results)])
+        
 
         # Debugging print
         print(f"Combined text to save: {combined_text}")
