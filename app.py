@@ -156,8 +156,8 @@ if st.button("Process Images"):
 
 # Step 3: Summarize content from `.txt` file
 st.header("Summarize Content")
-tone = st.text_input("Enter the desired tone (e.g., formal, casual, professional):")
-audience_type = st.text_input("Enter the audience type (e.g., Business User, Pharmacist):")
+tone = st.text_input("Enter the desired tone (e.g., formal, casual, professional, None):")
+audience_type = st.text_input("Enter the audience type (e.g., Business User, Pharmacist, None):")
 example = st.text_area("Provide an example tone/style:")
 
 if st.button("Generate Summary"):
