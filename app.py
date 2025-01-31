@@ -81,11 +81,22 @@ def read_file(file_path):
 # Construct a prompt for summarization
 def construct_prompt(base_content, audience_type, tone, example):
     prompt = f"""
-    Original Content:
+    You are an expert business analyst skilled in summarizing complex presentations with detailed graphs and data. Your task is to generate a structured and insightful summary based on the provided content.
+    ## **Instructions:**
+1. Read the base content extracted from the PowerPoint slides.
+2. Analyze key insights, trends, and findings.
+3. Write a summary in a structured, professional, and analytical style similar to the example summary provided.
+4. Maintain clarity, coherence, and logical flow.
+    ## **Input Data:**
+### **Base Content (Extracted from PPT - output.txt)**
     {base_content}
+    ### **Example Summary (Reference Style)**
+    {example}
+    {audience_type}
+    {tone}
 
-    Please summarize the above content in the form of a story for {audience_type} in the tone: {tone}.
-    Here is an example for the story: {example}.
+
+    Generate a well-structured and insightful summary that follows the writing style of the example summary while summarizing the key insights from the base content.
     """
     return prompt
 
