@@ -23,7 +23,7 @@ def call_open_ai_api(image_path):
                 {
                     "role": "user",
                     "content": [
-                        {"type": "text", "text": "What is in this image?"},
+                        {"type": "text", "text": "What is in this image? Also give the inference of the image in 2 sentences."},
                         {
                             "type": "image_url",
                             "image_url": {"url": f"data:image/jpeg;base64,{base64_image}"},
