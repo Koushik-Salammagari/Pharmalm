@@ -23,7 +23,11 @@ def call_open_ai_api(image_path):
                 {
                     "role": "user",
                     "content": [
-                        {"type": "text", "text": "What is in this image? Also give the inference of the image in 2 sentences."},
+                        {"type": "text", "text": "Describe the content of this image in detail. "
+                                "If the image contains a graph, chart, or statistical data, extract key insights, "
+                                "describe any trends, patterns, or anomalies, and summarize the most important findings. "
+                                "Then, provide a concise 2-4 sentence summary highlighting the key takeaway from the image."
+                            },
                         {
                             "type": "image_url",
                             "image_url": {"url": f"data:image/jpeg;base64,{base64_image}"},
