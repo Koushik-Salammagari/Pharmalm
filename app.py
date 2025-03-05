@@ -30,7 +30,7 @@ def call_open_ai_api(image_path):
                                   "Ensure numerical accuracy in all data points. "
 
                                 "Then, provide a concise 2-4 sentence summary highlighting the key takeaway from the image."
-                         "Additionally, provide a *one-line summary* highlighting the most critical takeaway".
+                         "Additionally, provide a *one-line summary* highlighting the most critical takeaway."
                             },
                         {
                             "type": "image_url",
