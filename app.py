@@ -91,6 +91,7 @@ def construct_prompt(base_content, audience_type, tone, example):
 2. Analyze key insights, trends, and findings.
 3. Write a summary in a structured, professional, and analytical style similar to the example summary provided.
 4. Maintain clarity, coherence, and logical flow.
+5. Focus on the most recent month's *trend and key insights, summarizing each slide in a **single-line format. Ensure **numerical accuracy* and highlight any significant changes, patterns, or anomalies in the latest data, while briefly acknowledging overall trends.
     ## **Input Data:**
 ### **Base Content (Extracted from PPT - output.txt)**
     {base_content}
