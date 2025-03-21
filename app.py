@@ -29,8 +29,7 @@ def call_open_ai_api(image_path):
                                   "Focus on trends in the *most recent month*, while briefly mentioning overall trends. "
                                   "Ensure numerical accuracy in all data points. "
 
-                                "Then, provide a concise 2-4 sentence summary highlighting the key takeaway from the image."
-                         "Additionally, provide a *one-line summary* highlighting the most critical takeaway."
+                                "Summarize overall market trends with focus on the most recent month's data—emphasize total market insights with stronger focus on Sogroya® and Norditropin® growth, share shifts, and brand dynamics and provide a one-line key takeaway limited to 200 characters (including spaces and punctuation)."
                             },
                         {
                             "type": "image_url",
